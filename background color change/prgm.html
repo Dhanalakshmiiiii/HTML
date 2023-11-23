@@ -1,0 +1,23 @@
+<html lan="eng">
+<head>
+   <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device=width,initial-scale=1.0">
+   <style>
+     button{
+	align-self:center;
+     }
+   </style>
+</head>
+<body>
+  <center><h1>Changing background color</h1></center>
+  <center><button id="btn" onclick="changecolor()">Click Me</button></center>
+</body>
+<script>
+  let color=document.getElementById("btn")
+  function changecolor(){
+     let bgcolor='#'+Math.floor(Math.random()*16777215).toString(16);
+     document.body.style.background=bgcolor;
+  }
+</script>
+</html>
